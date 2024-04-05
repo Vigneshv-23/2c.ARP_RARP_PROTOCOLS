@@ -33,6 +33,7 @@ while True:
         c.send("Not Found".encode())
 ```
 ## server
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -40,6 +41,7 @@ while True:
     ip = input("Enter Logical Address : ")
     s.send(ip.encode())
     print("MAC Address",s.recv(1024).decode())
+```
 ## OUPUT - ARP
 ![image](https://github.com/Vigneshv-23/2c.ARP_RARP_PROTOCOLS/assets/110780412/7f11c46b-0af2-4498-aca8-209db79644e3)
 
